@@ -1,0 +1,28 @@
+root@asus-k42f:/home/johan# docker run -it ubuntu
+root@4ce40d149bf4:/# ls
+bin   dev  home  lib64  mnt  proc  run   srv  tmp  var
+boot  etc  lib   media  opt  root  sbin  sys  usr
+root@4ce40d149bf4:/# dpkg -l
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name           Version      Architecture Description
++++-==============-============-============-=================================
+ii  adduser        3.113+nmu3ub all          add and remove users and groups
+ii  apt            1.2.24       amd64        commandline package manager
+ii  base-files     9.4ubuntu4.5 amd64        Debian base system miscellaneous
+ii  base-passwd    3.5.39       amd64        Debian base system master passwor
+ii  bash           4.3-14ubuntu amd64        GNU Bourne Again SHell
+ii  bsdutils       1:2.27.1-6ub amd64        basic utilities from 4.4BSD-Lite
+ii  coreutils      8.25-2ubuntu amd64        GNU core utilities
+ii  dash           0.5.8-2.1ubu amd64        POSIX-compliant shell
+ii  debconf        1.5.58ubuntu all          Debian configuration management s
+ii  debianutils    4.7          amd64        Miscellaneous utilities specific
+ii  diffutils      1:3.3-3      amd64        File comparison utilities
+ii  dpkg           1.18.4ubuntu amd64        Debian package management system
+
+dari perintah docker run-it ubuntu digunakan untuk menjalankan file ubuntu yang sudah di pull
+
+lalu untuk cek apakah ubntu sudah bisa digunakan maka ls untuk melihat isi direktori
+
+lalu dpkg-l digunakan untuk mengecek aplikasi atau package yang bisa di pasang pada versi ubuntu yang sudah terinstall apa saja

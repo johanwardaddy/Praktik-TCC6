@@ -1,0 +1,7 @@
+root@asus-k42f:/home/johan# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              747cb2d60bbe        13 days ago         122MB
+nginx               latest              1e5ab59102ce        2 weeks ago         108MB
+hello-world         latest              05a3bd381fc2        5 weeks ago         1.84kB
+
+perintah di atas digunakan untuk melihat  apa saja isi dari docker image yang sudah di pull

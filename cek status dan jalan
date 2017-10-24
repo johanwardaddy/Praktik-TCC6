@@ -1,0 +1,21 @@
+systemctl status docker perintah tersebut digunakan untuk mengecek status docker apakah docker sudah berjalan atau belum
+root@asus-k42f:/home/johan# systemctl status docker
+● docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; ve
+   Active: active (running) since Tue 2017-10-24 14:40:39 WIB; 1h
+     Docs: https://docs.docker.com
+ Main PID: 5297 (dockerd)
+    Tasks: 36 (limit: 4915)
+   Memory: 158.7M
+      CPU: 40.703s
+   CGroup: /system.slice/docker.service
+           ├─ 5297 /usr/bin/dockerd -H fd://
+           ├─ 5323 docker-containerd -l unix:///var/run/docker/lib
+           └─10856 docker-containerd-shim f6d43117cfb2ba019ff3e519
+
+Oct 24 14:40:39 asus-k42f dockerd[5297]: time="2017-10-24T14:40:39
+Oct 24 14:40:39 asus-k42f dockerd[5297]: time="2017-10-24T14:40:39
+Oct 24 14:40:39 asus-k42f systemd[1]: Started Docker Application C
+Oct 24 14:40:39 asus-k42f dockerd[5297]: time="2017-10-24T14:40:39
+
+root@asus-k42f:/home/johan# systemctl start docker perintah tersebut digunakan untuk menjalankan Docker

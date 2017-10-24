@@ -1,0 +1,17 @@
+root@asus-k42f:/home/johan# docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+ae79f2514705: Downloading [============================>          ae79f2514705: Pull complete
+5ad56d5fc149: Pull complete
+170e558760e8: Pull complete
+395460e233f5: Pull complete
+6f01dc62e444: Pull complete
+Digest: sha256:506e2d5852de1d7c90d538c5332bd3cc33b9cbd26f6ca653875899c505c82687
+Status: Downloaded newer image for ubuntu:latest
+root@asus-k42f:/home/johan# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              747cb2d60bbe        13 days ago         122MB
+nginx               latest              1e5ab59102ce        2 weeks ago         108MB
+hello-world         latest              05a3bd381fc2        5 weeks ago         1.84kB
+
+jika ada images yang akan di pull langsung saja ketik perintah docker pull dengan isian sesuai image yang di inginkan, lalu cek apakah sudah terpasang
